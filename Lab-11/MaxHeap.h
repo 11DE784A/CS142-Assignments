@@ -59,6 +59,7 @@ class MaxHeap {
 			T x = a[0];
 			a[0] = a[--n];
 			heapify(0);
+			a.resize(n);
 			return x;
 		}
 

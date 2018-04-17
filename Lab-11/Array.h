@@ -63,6 +63,12 @@ class Array {
 					b[i] = (*this)[i];
 
 				*this = b;
+			} else if (3*n < length) {
+				Array<T> b(length/2);
+				for (int i=0; i<n; ++i)
+					b[i] = (*this)[i];
+
+				*this = b;
 			}
 		}
 
